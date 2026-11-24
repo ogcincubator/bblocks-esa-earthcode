@@ -1,0 +1,45 @@
+"$schema": https://json-schema.org/draft/2020-12/schema
+description: 'EarthCode Experiment'
+allOf:
+  - $ref: bblocks://ogc.esa.earthcode.common
+  - $ref: bblocks://ogc.geo.geodcat.geodcat-records
+properties:
+  properties:
+    # because a Record is a "Feature" then the nested properties property can have
+    # properties defining aspects of the prov Activity (the workflow run). When provType
+    # is given, the properties must be a valid PROV Activity; records without provenance
+    # are not constrained by it.
+    anyOf:
+      - $ref: bblocks://ogc.ogc-utils.prov-activity
+      - not:
+          required:
+            - provType
+    type: object
+    required:
+      - osc:workflow
+    properties:
+      osc:workflow:
+        $ref: bblocks://ogc.esa.earthcode.common#/$defs/osc:workflow
+    
+
+  links:
+    type: array
+    items:
+      oneOf:
+        - title: Other Link
+          properties:
+            rel:
+              not:
+                enum:
+                  - via
+                  - input
+                  - environment
+        - title: Link to Input Parameter
+          properties:
+            rel:
+              const: input
+        - title: Link to Execution Environment
+          properties:
+            rel:
+              const: environment
+        - $ref: bblocks://ogc.esa.earthcode.common#/$defs/via_links

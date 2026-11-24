@@ -1,0 +1,27 @@
+# A short, descriptive name of this building block collection
+name: ESA EarthCODE Building Blocks
+
+# Short abstract for this collection (optional)
+abstract: |
+  EarthCODE metadata profiles (GeoDCAT / STAC / OGC API Records) for experiments, products and workflows,
+  with their workflow provenance linked to the Open Science provenance profiles.
+# Description for this collection (optional)
+description: |
+  Building blocks describing the metadata published by [ESA EarthCODE](https://earthcode.esa.int/) in the
+  [Open Science Catalog](https://opensciencedata.esa.int/). They build on the
+  [Open Science Workflows Building Blocks](https://ogcincubator.github.io/bblocks-openscience/) register.
+
+# Customize the following prefix (will be prepended to the path of the building blocks):
+identifier-prefix: ogc.esa.earthcode.
+
+# List of imports ("default" is an alias for the main OGC Building Blocks Register)
+imports:
+  - default
+  - https://ogcincubator.github.io/bblocks-openscience/build/register.json
+  - '@ogc/ogcapi-records'
+  - '@ogc/ogcapi-processes'
+  - '@ogc/stac'
+
+# Whether to enable the (highly experimental) downcompiling of JSON schemas to an OpenAPI 3.0-compatible
+# version
+schema-oas30-downcompile: False

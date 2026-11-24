@@ -1,0 +1,59 @@
+@prefix rdf:     <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:    <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sh:      <http://www.w3.org/ns/shacl#> .
+@prefix xsd:     <http://www.w3.org/2001/XMLSchema#> .
+@prefix wfprov:  <http://purl.org/wf4ever/wfprov#> .
+@prefix wfdesc:  <http://purl.org/wf4ever/wfdesc#> .
+@prefix ec:      <https://w3id.org/ogc/esa/earthcode/experiments#> .
+
+# Consistency rules for experiment provenance recorded with the wf4ever vocabularies
+# (wfprov / wfdesc), as in the Kind Grove example.
+#
+# wf4ever is deprecated in these building blocks (see the block description): the shapes are kept
+# so that existing wf4ever traces stay consistent. They only apply to data typed with wfprov
+# classes, so provenance using the PROV profiles and registered activity types is unaffected.
+
+############################################################
+# ProcessRun must be described by a wfdesc:Process
+############################################################
+
+ec:ProcessRunShape
+    a sh:NodeShape ;
+    sh:targetClass wfprov:ProcessRun ;
+    sh:message "Each ProcessRun must be described by a wfdesc:Process." ;
+    sh:property [
+        sh:path wfprov:describedByProcess ;
+        sh:class wfdesc:Process ;
+        sh:minCount 1
+    ] .
+
+############################################################
+# ProcessRun must belong to a WorkflowRun
+############################################################
+
+ec:ProcessRunWorkflowShape
+    a sh:NodeShape ;
+    sh:targetClass wfprov:ProcessRun ;
+    sh:message "Each ProcessRun must be associated with a WorkflowRun." ;
+    sh:property [
+        sh:path wfprov:wasPartOfWorkflowRun ;
+        sh:class wfprov:WorkflowRun ;
+        sh:minCount 1
+    ] .
+
+############################################################
+# Derived artifacts must point to a ProcessRun
+# (wfdesc:wasOutputFrom is not a published wfdesc term, but is accepted because existing
+# traces use it.)
+############################################################
+
+ec:ArtifactProvenanceShape
+    a sh:NodeShape ;
+    sh:targetSubjectsOf wfprov:wasOutputFrom ;
+    sh:targetSubjectsOf wfdesc:wasOutputFrom ;
+    sh:message "Derived artifacts must be linked to a ProcessRun that produced them." ;
+    sh:property [
+        sh:path [ sh:alternativePath ( wfprov:wasOutputFrom wfdesc:wasOutputFrom ) ] ;
+        sh:class wfprov:ProcessRun ;
+        sh:minCount 1 ;
+    ] .

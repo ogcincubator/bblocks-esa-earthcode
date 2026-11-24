@@ -1,0 +1,6 @@
+{
+  "@context": {
+    "acttype": "https://w3id.org/ogc/rim/activity-type/",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#"
+  }
+}
