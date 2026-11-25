@@ -1,0 +1,88 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "EarthCode Experiment",
+  "allOf": [
+    {
+      "$ref": "https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/schema.json"
+    },
+    {
+      "$ref": "https://ogcincubator.github.io/geodcat-ogcapi-records/build/annotated/geo/geodcat/geodcat-records/schema.json"
+    }
+  ],
+  "properties": {
+    "properties": {
+      "anyOf": [
+        {
+          "$ref": "https://ogcincubator.github.io/bblock-prov-schema/build/annotated/ogc-utils/prov-activity/schema.json"
+        },
+        {
+          "not": {
+            "required": [
+              "provType"
+            ]
+          }
+        }
+      ],
+      "type": "object",
+      "required": [
+        "osc:workflow"
+      ],
+      "properties": {
+        "osc:workflow": {
+          "$ref": "https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/schema.json#/$defs/osc:workflow"
+        }
+      }
+    },
+    "links": {
+      "type": "array",
+      "items": {
+        "oneOf": [
+          {
+            "title": "Other Link",
+            "properties": {
+              "rel": {
+                "not": {
+                  "enum": [
+                    "via",
+                    "input",
+                    "environment"
+                  ]
+                }
+              }
+            }
+          },
+          {
+            "title": "Link to Input Parameter",
+            "properties": {
+              "rel": {
+                "const": "input"
+              }
+            }
+          },
+          {
+            "title": "Link to Execution Environment",
+            "properties": {
+              "rel": {
+                "const": "environment"
+              }
+            }
+          },
+          {
+            "$ref": "https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/schema.json#/$defs/via_links"
+          }
+        ]
+      }
+    }
+  },
+  "x-jsonld-prefixes": {
+    "acttype": "https://w3id.org/ogc/rim/activity-type/",
+    "wfprov": "http://purl.org/wf4ever/wfprov#",
+    "wfdesc": "http://purl.org/wf4ever/wfdesc#"
+  },
+  "x-bblocks-metadata": {
+    "itemIdentifier": "ogc.esa.earthcode.experiments",
+    "register": "https://ogcincubator.github.io/bblocks-esa-earthcode/build/register.json",
+    "version": "0.1",
+    "dateOfLastChange": "2026-11-24"
+  }
+}

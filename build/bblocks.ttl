@@ -1,0 +1,414 @@
+@prefix bblocks: <https://www.opengis.net/def/bblocks/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix ns1: <http://www.iana.org/assignments/> .
+@prefix ns2: <http://www.w3.org/ns/oa#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix prof: <http://www.w3.org/ns/dx/prof/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix role: <http://www.w3.org/ns/dx/prof/role/> .
+@prefix schema: <https://schema.org/> .
+@prefix shacl: <https://www.w3.org/TR/shacl/> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<bblocks://ogc.esa.earthcode.products> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EarthCODE Product" ;
+    dct:abstract "EarthCODE metadata profile linked to semantic models"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/bblock/ogc.esa.earthcode.products> ],
+        [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/json-full/esa/earthcode/products/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/markdown/esa/earthcode/products/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-11-24"^^xsd:date ;
+    dct:source <http://www.opengis.net/def/metamodel/profiles/geodcat>,
+        <https://earthcode.esa.int/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    skos:prefLabel "EarthCODE Product" ;
+    skos:topConceptOf <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.themes-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/themes-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.core-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/products/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.components.assets-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/components/assets-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.osc-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/osc-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/products/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.cf-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/cf-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.api.records.v1.schemas.linkTemplate> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/products/schema.yaml> ;
+            prof:hasRole role:schema ] ;
+    bblocks:dependsOn <bblocks://ogc.contrib.stac.extensions.cf>,
+        <bblocks://ogc.esa.earthcode.common>,
+        <bblocks://ogc.ogc-utils.prov-entity> ;
+    bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-esa-earthcode/_sources/products/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<bblocks://ogc.esa.earthcode.workflows> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EarthCODE Workflow" ;
+    dct:abstract "EarthCODE metadata profile linked to semantic models"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/json-full/esa/earthcode/workflows/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/bblock/ogc.esa.earthcode.workflows> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/markdown/esa/earthcode/workflows/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-11-24"^^xsd:date ;
+    dct:source <http://www.opengis.net/def/metamodel/profiles/geodcat> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    skos:prefLabel "EarthCODE Workflow" ;
+    skos:topConceptOf <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.api.records.v1.schemas.linkTemplate> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/workflows/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.osc-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/osc-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/workflows/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.core-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.components.assets-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/components/assets-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/workflows/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.themes-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/themes-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:dependsOn <bblocks://ogc.api.processes.v1.schemas.inputDescription>,
+        <bblocks://ogc.api.processes.v1.schemas.outputDescription>,
+        <bblocks://ogc.esa.earthcode.common>,
+        <bblocks://ogc.geo.geodcat.geodcat-records>,
+        <bblocks://ogc.ogc-utils.prov-entity> ;
+    bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-esa-earthcode/_sources/workflows/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://ogcincubator.github.io/bblocks-esa-earthcode/build/bblocks.ttl> a prov:Entity ;
+    dct:format "text/turtle" ;
+    prov:wasAttributedTo _:Nb2fb7f30749345bfa0b7be3bec895ab9 ;
+    prov:wasGeneratedBy [ a prov:Activity ;
+            prov:endedAtTime "2026-11-25T12:20:38.674064"^^xsd:dateTime ;
+            prov:startedAtTime "2026-11-25T12:20:38.473292"^^xsd:dateTime ;
+            prov:used [ a prov:Entity ;
+                    dct:format "application/yaml" ;
+                    rdfs:seeAlso <file:///src/ogc/bblocks/register-context.yaml> ],
+                [ a prov:Entity ;
+                    dct:format "application/json" ;
+                    dct:hasVersion "git:90eb0682800c89507c32914ba4b0603c90640b15" ;
+                    rdfs:seeAlso <https://ogcincubator.github.io/bblocks-esa-earthcode/build/register.json> ] ;
+            prov:wasAssociatedWith _:Nb2fb7f30749345bfa0b7be3bec895ab9 ] .
+
+<https://opensciencedata.esa.int/> rdfs:label "EarthCODE Catalog" .
+
+<bblocks://ogc.esa.earthcode.experiments> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EarthCODE Experiment" ;
+    dct:abstract "EarthCODE metadata profile linked to semantic models"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/json-full/esa/earthcode/experiments/index.json> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/markdown/esa/earthcode/experiments/index.md> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/bblock/ogc.esa.earthcode.experiments> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-11-24"^^xsd:date ;
+    dct:source <http://www.opengis.net/def/metamodel/profiles/geodcat>,
+        <https://earthcode.esa.int/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    skos:prefLabel "EarthCODE Experiment" ;
+    skos:topConceptOf <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/experiments/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.api.records.v1.schemas.linkTemplate> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/experiments/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.themes-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/themes-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.osc-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/osc-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/experiments/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.esa.earthcode.experiments> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/_sources/experiments/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.components.assets-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/components/assets-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.core-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:dependsOn <bblocks://ogc.esa.earthcode.common>,
+        <bblocks://ogc.geo.geodcat.geodcat-records>,
+        <bblocks://ogc.ogc-utils.prov-activity> ;
+    bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-esa-earthcode/_sources/experiments/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<http://www.opengis.net/def/metamodel/profiles/geodcat> rdfs:label "GeoDCAT Specification" .
+
+<https://earthcode.esa.int/> rdfs:label "EarthCODE" .
+
+<bblocks://ogc.esa.earthcode.common> a skos:Concept,
+        dcat:Dataset,
+        bblocks:BBlock,
+        bblocks:Schema ;
+    rdfs:label "EarthCODE Common STAC profile" ;
+    dct:abstract "EarthCODE metadata profile linked to semantic models"^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:created "2023-09-18T00:00:00+00:00"^^xsd:dateTime ;
+    dct:description [ dct:format "application/json" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/json-full/esa/earthcode/common/index.json> ],
+        [ dct:format "text/html" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/bblock/ogc.esa.earthcode.common> ],
+        [ dct:format "text/markdown" ;
+            rdfs:isDefinedBy <https://ogcincubator.github.io/bblocks-esa-earthcode/build/generateddocs/markdown/esa/earthcode/common/index.md> ] ;
+    dct:hasVersion "0.1" ;
+    dct:modified "2026-11-24"^^xsd:date ;
+    dct:source <https://earthcode.esa.int/>,
+        <https://opensciencedata.esa.int/> ;
+    skos:inScheme <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    skos:prefLabel "EarthCODE Common STAC profile" ;
+    skos:topConceptOf <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    dcat:keyword "DCAT",
+        "EarthCODE",
+        "Records",
+        "STAC",
+        "profile" ;
+    prof:hasResource [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/yaml" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/schema.yaml> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.model.cross-domain.prov> ;
+            prof:hasArtifact <https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.geo.features.feature> ;
+            prof:hasArtifact <https://opengeospatial.github.io/bblocks/registereditems/geo/features/feature/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://json-schema.org/draft/2020-12/schema> ;
+            dct:format "application/json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/schema.json> ;
+            prof:hasRole role:schema ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.themes-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/themes-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.components.assets-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/components/assets-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.core-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/core-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo <https://www.w3.org/TR/json-ld11/> ;
+            dct:format "application/ld+json" ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-esa-earthcode/build/annotated/esa/earthcode/common/context.jsonld> ;
+            prof:hasRole role:mapping ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.api.records.v1.schemas.linkTemplate> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-ogcapi-records/_sources/v1/schemas/linkTemplate/rules.shacl> ;
+            prof:hasRole role:validation ],
+        [ dct:conformsTo shacl: ;
+            dct:format "text/turtle" ;
+            rdfs:seeAlso <bblocks://ogc.contrib.stac.extensions.osc-ontology> ;
+            prof:hasArtifact <https://ogcincubator.github.io/bblocks-stac/_sources/extensions/osc-ontology/shapes.shacl> ;
+            prof:hasRole role:validation ] ;
+    bblocks:dependsOn <bblocks://ogc.contrib.stac.extensions.osc>,
+        <bblocks://ogc.contrib.stac.extensions.themes>,
+        <bblocks://ogc.geo.geodcat.geodcat-records>,
+        <bblocks://ogc.geo.geodcat.stac.geodcat-stac-collection>,
+        <bblocks://ogc.geo.geodcat.stac.geodcat-stac-item>,
+        <bblocks://ogc.ogc-utils.prov> ;
+    bblocks:hasSourceJsonLdContext <https://ogcincubator.github.io/bblocks-esa-earthcode/_sources/common/context.jsonld> ;
+    bblocks:scope <http://www.opengis.net/def/bblocks/scope/dev> ;
+    bblocks:status <http://www.opengis.net/def/status/under-development> ;
+    bblocks:validationPassed true .
+
+<https://ogcincubator.github.io/bblocks-esa-earthcode/> a skos:ConceptScheme,
+        dcat:Catalog,
+        bblocks:BBlocksRegister ;
+    rdfs:label "Building Blocks - ESA EarthCODE Building Blocks" ;
+    dct:abstract """EarthCODE metadata profiles (GeoDCAT / STAC / OGC API Records) for experiments, products and workflows,
+with their workflow provenance linked to the Open Science provenance profiles.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:description """Building blocks describing the metadata published by [ESA EarthCODE](https://earthcode.esa.int/) in the
+[Open Science Catalog](https://opensciencedata.esa.int/). They build on the
+[Open Science Workflows Building Blocks](https://ogcincubator.github.io/bblocks-openscience/) register.
+"""^^<https://www.w3.org/ns/iana/media-types/text/markdown> ;
+    dct:modified "2026-11-25T12:19:44.934659"^^xsd:dateTime ;
+    owl:imports <https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-openscience/build/register.json>,
+        <https://ogcincubator.github.io/bblocks-stac/build/register.json>,
+        <https://opengeospatial.github.io/bblocks/register.json> ;
+    skos:hasTopConcept <bblocks://ogc.esa.earthcode.common>,
+        <bblocks://ogc.esa.earthcode.experiments>,
+        <bblocks://ogc.esa.earthcode.products>,
+        <bblocks://ogc.esa.earthcode.workflows> ;
+    skos:prefLabel "Building Blocks - ESA EarthCODE Building Blocks" ;
+    prof:hasResource [ rdfs:label "This Building Blocks Register in JSON format" ;
+            dct:type "application/json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-esa-earthcode/build/register.json> ],
+        [ rdfs:label "This Building Blocks Register in JSON-LD format" ;
+            dct:type "application/ld+json" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-esa-earthcode/build/bblocks.jsonld> ],
+        [ rdfs:label "This Building Blocks Register in RDF Turtle format" ;
+            dct:type "text/turtle" ;
+            ns1:relation <http://www.iana.org/assignments/relation/self> ;
+            ns2:hasTarget <https://ogcincubator.github.io/bblocks-esa-earthcode/build/bblocks.ttl> ] ;
+    foaf:homepage <https://ogcincubator.github.io/bblocks-esa-earthcode/> ;
+    bblocks:hasValidationReport <https://ogcincubator.github.io/bblocks-esa-earthcode/build/tests/report.html> .
+
+_:Nb2fb7f30749345bfa0b7be3bec895ab9 a prov:Agent,
+        schema:SoftwareApplication ;
+    rdfs:label "OGC-NA tools" ;
+    dct:hasVersion "0.6.0" ;
+    rdfs:seeAlso <https://github.com/opengeospatial/ogc-na-tools> .
+

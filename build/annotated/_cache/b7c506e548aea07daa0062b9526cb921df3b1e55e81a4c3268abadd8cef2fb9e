@@ -1,0 +1,1377 @@
+{
+  "metaRegistry": "https://w3id.org/ogc/bblocks/meta-register.json",
+  "name": "Open Science Workflows Building Blocks",
+  "abstract": "Building Blocks for FAIR Open Science - profiles of OGC API Processes and various metadata standards to support open, transparent, interoperable and reproducible scientific workflows..\n",
+  "description": "This repository is initially aimed to support the [Open Science Persistent Demonstrator](https://www.ogc.org/initiatives/open-science/) pilot, but may be further developed as a set of standards with appropriate working group governance.\n",
+  "sparqlEndpoint": "https://defs-dev.opengis.net/fuseki/query",
+  "modified": "2026-11-24T05:53:00.439850",
+  "tooling": {
+    "bblocks-postprocess": {
+      "commitId": "\"61523b7930e440b7e6e6bc03cb1b104d5d01f3f5",
+      "shortCommitId": "\"61523b",
+      "date": "2026-11-23T13:04:26+00:00\""
+    }
+  },
+  "gitRepository": "https://github.com/ogcincubator/bblocks-openscience",
+  "gitHubRepository": "https://github.com/ogcincubator/bblocks-openscience/blob/master/",
+  "baseURL": "https://ogcincubator.github.io/bblocks-openscience/",
+  "viewerURL": "https://ogcincubator.github.io/bblocks-openscience/",
+  "validationReport": "https://ogcincubator.github.io/bblocks-openscience/build/tests/report.html",
+  "validationReportJson": "https://ogcincubator.github.io/bblocks-openscience/build/tests/report.json",
+  "imports": [
+    "https://opengeospatial.github.io/bblocks/register.json",
+    "https://ogcincubator.github.io/bblocks-ogcapi-records/build/register.json",
+    "https://ogcincubator.github.io/bblocks-ogcapi-processes/build/register.json",
+    "https://ogcincubator.github.io/prov-cwl/build/register.json",
+    "https://ogcincubator.github.io/bblocks-stac/build/register.json",
+    "https://ogcincubator.github.io/cross-domain-model/build/register.json"
+  ],
+  "bblocks": [
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputSchema",
+      "name": "Buffer geometry process output schema",
+      "abstract": "Output schema for the buffer geometry process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputSchema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputSchema",
+      "name": "Buffer geometry process input schema",
+      "abstract": "Input schema for the buffer geometry process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.geo.common.data_types.geojson",
+        "bblocks://ogc.ogc-utils.iri-or-curie"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputSchema/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputSchema"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-profiles.processing-step",
+      "name": "Registered Processing Step",
+      "highlighted": true,
+      "group": "PROV profile",
+      "abstract": "A PROV Activity describing one processing step, typed by a process type from a governed register.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-21T00:00:00Z",
+      "dateOfLastChange": "2026-11-24",
+      "itemClass": "schema",
+      "version": "0.1.0",
+      "isProfileOf": [
+        "bblocks://ogc.ogc-utils.prov-activity"
+      ],
+      "scope": "dev",
+      "tags": [
+        "provenance",
+        "prov-o",
+        "processing",
+        "process type",
+        "ospd"
+      ],
+      "shaclShapes": {
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.iri-or-curie",
+        "bblocks://ogc.ogc-utils.prov-activity"
+      ],
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/processing-step/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/processing-step/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/processing-step/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/processing-step/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-profiles/processing-step/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-profiles/processing-step/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-profiles/processing-step/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-profiles.processing-step"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.rss-hydro.processing-activity",
+      "name": "Processing activity provenance",
+      "abstract": "Generic W3C PROV profile of one geospatial processing activity.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-14T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.prov-activity"
+      ],
+      "version": "0.1",
+      "scope": "dev",
+      "tags": [
+        "ospd",
+        "prov",
+        "processing activity"
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dateOfLastChange": "2026-11-24",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/processing-activity/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/processing-activity/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/processing-activity/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/processing-activity/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/processing-activity/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/processing-activity/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/processing-activity/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/rss-hydro/processing-activity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/rss-hydro/processing-activity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/rss-hydro/processing-activity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.rss-hydro.processing-activity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputDescription",
+      "name": "Buffer geometry process input description",
+      "abstract": "Description for the inputs of the buffer geometry process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputSchema"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/inputDescription/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputDescription"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputDescription",
+      "name": "Buffer geometry process output description",
+      "abstract": "Description for the output of the buffer geometry process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputSchema"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/outputDescription/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputDescription"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.ontology.cwlprov",
+      "name": "CWL Ontology",
+      "highlighted": true,
+      "group": "Common Semantics",
+      "abstract": "Ontology describing the Common Workflow Language (CWL) model",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.prov"
+      ],
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "OSPD"
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/ontology/cwlprov/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/ontology/cwlprov/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/ontology/cwlprov/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.ontology.cwlprov"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-profiles.aganitha-ndvi",
+      "name": "Geospatial Processing Step Provenance",
+      "highlighted": true,
+      "group": "PROV profile",
+      "abstract": "A profile of the PROV-O building block constrained to the description of a single geospatial processing step, with a required link to a registered process type.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-08-05T00:00:00Z",
+      "itemClass": "schema",
+      "version": "0.1.0",
+      "tags": [
+        "provenance",
+        "prov-o",
+        "processing",
+        "ospd"
+      ],
+      "isProfileOf": [
+        "bblocks://ogc.osc.prov-profiles.processing-step"
+      ],
+      "shaclShapes": {
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.osc.prov-profiles.processing-step"
+      ],
+      "dateOfLastChange": "2026-11-24",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/aganitha-ndvi/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/aganitha-ndvi/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/aganitha-ndvi/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/aganitha-ndvi/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/aganitha-ndvi/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/aganitha-ndvi/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-profiles/aganitha-ndvi/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-profiles/aganitha-ndvi/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-profiles/aganitha-ndvi/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-profiles.aganitha-ndvi"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-profiles.workflow-graph",
+      "name": "Workflow Provenance Graph",
+      "highlighted": true,
+      "group": "PROV profile",
+      "abstract": "Provenance of a workflow run as a PROV graph in which every activity is a registered processing step.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-11-21T00:00:00Z",
+      "dateOfLastChange": "2026-11-24",
+      "itemClass": "schema",
+      "version": "0.1.0",
+      "isProfileOf": [
+        "bblocks://ogc.ogc-utils.prov"
+      ],
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.iri-or-curie",
+        "bblocks://ogc.ogc-utils.prov",
+        "bblocks://ogc.osc.prov-profiles.processing-step"
+      ],
+      "scope": "dev",
+      "tags": [
+        "provenance",
+        "prov-o",
+        "workflow provenance",
+        "ospd"
+      ],
+      "shaclShapes": {
+        "ogc.osc.prov-profiles.workflow-graph": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ],
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ]
+      },
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/workflow-graph/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/workflow-graph/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/workflow-graph/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/workflow-graph/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-profiles/workflow-graph/",
+      "semanticUplift": {
+        "additionalSteps": [
+          {
+            "type": "shacl",
+            "ref": "uplift/types.shacl",
+            "inheritable": true,
+            "stage": "post",
+            "code": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix prov: <http://www.w3.org/ns/prov#> .\n@prefix wg: <https://w3id.org/ogc/osc/prov-profiles/workflow-graph#> .\n\n# Type uplift rule (SHACL-AF), applied as a semantic-uplift step before validation.\n#\n# The PROV building blocks map entityType / activityType / agentType to prov:type, and only\n# provType to rdf:type. For an allow-list of classes, this rule also asserts the prov:type value\n# as rdf:type, so that shapes using sh:targetClass / sh:class (e.g. the label shapes for plans\n# and agents) apply:\n#   - the PROV subclasses: prov:Plan, prov:Bundle, prov:Collection, prov:EmptyCollection,\n#     prov:Person, prov:Organization, prov:SoftwareAgent;\n#   - the generic workflow classes of the activity-type register: acttype:WorkflowPlan,\n#     acttype:WorkflowRun, acttype:WorkflowRunner.\n#\n# Process types (registered activity types) are deliberately NOT copied: they stay prov:type\n# values. Asserting them as rdf:type would make every run an instance of a register item class\n# (acttype:ActivityType is a subclass of rim:RegisterItem), so register-item rules would apply\n# to runs. Shapes about process types should test prov:type values instead.\n\nwg:TypeFromProvType\n  a sh:NodeShape ;\n  sh:targetSubjectsOf prov:type ;\n  sh:rule [\n    a sh:SPARQLRule ;\n    sh:order 0 ;\n    sh:construct \"\"\"\n      CONSTRUCT { $this a ?type . }\n      WHERE {\n        $this <http://www.w3.org/ns/prov#type> ?type .\n        VALUES ?type {\n          <http://www.w3.org/ns/prov#Plan>\n          <http://www.w3.org/ns/prov#Bundle>\n          <http://www.w3.org/ns/prov#Collection>\n          <http://www.w3.org/ns/prov#EmptyCollection>\n          <http://www.w3.org/ns/prov#Person>\n          <http://www.w3.org/ns/prov#Organization>\n          <http://www.w3.org/ns/prov#SoftwareAgent>\n          <https://w3id.org/ogc/rim/activity-type/WorkflowPlan>\n          <https://w3id.org/ogc/rim/activity-type/WorkflowRun>\n          <https://w3id.org/ogc/rim/activity-type/WorkflowRunner>\n        }\n      }\n    \"\"\" ;\n  ] .\n"
+          },
+          {
+            "type": "shacl",
+            "ref": "uplift/labels.shacl",
+            "inheritable": true,
+            "stage": "post",
+            "code": "@prefix sh: <http://www.w3.org/ns/shacl#> .\n@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .\n@prefix dcterms: <http://purl.org/dc/terms/> .\n@prefix skos: <http://www.w3.org/2004/02/skos/core#> .\n@prefix wg: <https://w3id.org/ogc/osc/prov-profiles/workflow-graph#> .\n\n# Label generation rules (SHACL-AF), applied as a semantic-uplift step.\n# Each rule adds an rdfs:label only to nodes that do not already have one.\n# Profiles may add their own rules (e.g. deriving a label from a file name)\n# in the same way.\n\nwg:NoLabel\n  a sh:NodeShape ;\n  sh:property [ sh:path rdfs:label ; sh:maxCount 0 ] .\n\nwg:LabelFromTitle\n  a sh:NodeShape ;\n  sh:targetSubjectsOf dcterms:title ;\n  sh:rule [\n    a sh:TripleRule ;\n    sh:order 1 ;\n    sh:condition wg:NoLabel ;\n    sh:subject sh:this ;\n    sh:predicate rdfs:label ;\n    sh:object [ sh:path dcterms:title ] ;\n  ] .\n\nwg:LabelFromPrefLabel\n  a sh:NodeShape ;\n  sh:targetSubjectsOf skos:prefLabel ;\n  sh:rule [\n    a sh:TripleRule ;\n    sh:order 2 ;\n    sh:condition wg:NoLabel ;\n    sh:subject sh:this ;\n    sh:predicate rdfs:label ;\n    sh:object [ sh:path skos:prefLabel ] ;\n  ] .\n"
+          }
+        ]
+      },
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-profiles/workflow-graph/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-profiles/workflow-graph/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-profiles.workflow-graph"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.rss-hydro.ontology.activities",
+      "name": "MoM workflow activity types",
+      "abstract": "Activity and entity types emitted by the RSS-Hydro Model of Models flood workflow, as subclasses of prov:Activity and prov:Entity.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-14T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.prov",
+        "bblocks://ogc.osc.rss-hydro.processing-activity"
+      ],
+      "version": "0.1",
+      "scope": "dev",
+      "tags": [
+        "ospd",
+        "prov",
+        "provenance",
+        "flood",
+        "MoM"
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dateOfLastChange": "2026-11-24",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/ontology/activities/context.jsonld",
+      "ontology": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/ontology/activities/ontology.ttl",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/ontology/activities/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/ontology/activities/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/ontology/activities/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/ontology/activities/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/ontology/activities/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/ontology/activities/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/rss-hydro/ontology/activities/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/rss-hydro/ontology/activities/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/rss-hydro/ontology/activities/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.rss-hydro.ontology.activities"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.ipt.results",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-22T15:29:12.046535",
+      "register": "ogcapi-processes",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "tags": [
+        "ogcapi-processes",
+        "schema"
+      ],
+      "name": "Result schema for IPT",
+      "abstract": "constraint on results to include provenance object inline",
+      "itemClass": "schema",
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.qualifiedInputValue",
+        "bblocks://ogc.ogc-utils.prov-activity",
+        "bblocks://ogc.ogc-utils.prov-entity"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/results/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/results/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ipt/results/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/results/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/results/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ipt/results/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/ipt/results/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/ipt/results/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.ipt.results"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.inputDescriptions",
+      "name": "Example OGC API Processes instance input descriptions",
+      "abstract": "Collection of input descriptions",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputDescription"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/inputDescriptions/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/inputDescriptions/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/inputDescriptions/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.inputDescriptions"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.processDescription",
+      "name": "Buffer geometry process description",
+      "abstract": "Description of the buffer geometry process",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.process",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputDescription",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputDescription"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/buffer-geometry/processDescription/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.processDescription"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation.schemas.outputDescriptions",
+      "name": "Example OGC API Processes instance output descriptions",
+      "abstract": "Collection of output descriptions",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputDescription"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/outputDescriptions/schema.yaml",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/schemas/outputDescriptions/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/schemas/outputDescriptions/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation.schemas.outputDescriptions"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.ontology.openscience",
+      "name": "Open Science Ontology",
+      "highlighted": true,
+      "group": "Common Semantics",
+      "abstract": "A modular standards-based ontology for describing interoperable and reproduceable scientific workflows. References individual ontology modules for different aspects, to maximise re-usability.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "model",
+      "register": "ogc-incubator",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "dependsOn": [
+        "bblocks://ogc.contrib.stac.core-ontology",
+        "bblocks://ogc.contrib.stac.extensions.cf-ontology",
+        "bblocks://ogc.contrib.stac.extensions.osc-ontology",
+        "bblocks://ogc.contrib.stac.extensions.processing-ontology",
+        "bblocks://ogc.geo.geodcat.dcat",
+        "bblocks://ogc.osc.ontology.cwlprov"
+      ],
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "OSPD"
+      ],
+      "shaclShapes": {
+        "ogc.contrib.stac.core-ontology": [
+          "https://ogcincubator.github.io/bblocks-stac/_sources/core-ontology/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ],
+        "ogc.contrib.stac.extensions.cf-ontology": [
+          "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/cf-ontology/shapes.shacl"
+        ],
+        "ogc.contrib.stac.extensions.osc-ontology": [
+          "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/osc-ontology/shapes.shacl"
+        ],
+        "ogc.contrib.stac.extensions.processing-ontology": [
+          "https://ogcincubator.github.io/bblocks-stac/_sources/extensions/processing-ontology/shapes.shacl"
+        ]
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/ontology/openscience/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/ontology/openscience/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/ontology/openscience/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.ontology.openscience"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-examples.52n-provenance.cool-spots",
+      "name": "Cool Spot Workflow Provenance Profile",
+      "highlighted": true,
+      "group": "PROV examples",
+      "abstract": "Cool Spot Workflow Provenance Profile.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-09-21T00:00:00Z",
+      "dateOfLastChange": "2026-11-24",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "isProfileOf": [
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "version": "0.1",
+      "link": "https://github.com/52North/bblocks-openscience",
+      "sources": [
+        {
+          "title": "VelocityAdapt",
+          "link": "https://velocityadapt.de/"
+        }
+      ],
+      "scope": "dev",
+      "tags": [
+        "workflow provenance",
+        "ospd",
+        "provenance",
+        "prov",
+        "cool spot"
+      ],
+      "shaclShapes": {
+        "ogc.osc.prov-profiles.workflow-graph": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ],
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/cool-spots/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/cool-spots/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/cool-spots/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/cool-spots/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/cool-spots/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/cool-spots/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/cool-spots/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-examples/52n-provenance/cool-spots/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-examples/52n-provenance/cool-spots/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-examples/52n-provenance/cool-spots/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-examples.52n-provenance.cool-spots"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-examples.52n-provenance.vegetation-productivity",
+      "name": "Vegetation Productivity Trend Workflow Provenance Profile",
+      "highlighted": true,
+      "group": "PROV examples",
+      "abstract": "Vegetation Productivity Trend Workflow Provenance Profile.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-08-18T00:00:00Z",
+      "dateOfLastChange": "2026-11-24",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "isProfileOf": [
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "version": "0.1",
+      "link": "https://github.com/52North/bblocks-openscience",
+      "sources": [
+        {
+          "title": "PEOPLE-ECCO",
+          "link": "https://www.people-ecco.eu/"
+        }
+      ],
+      "scope": "dev",
+      "tags": [
+        "workflow provenance",
+        "ospd",
+        "provenance",
+        "prov",
+        "vegetation productivity trend"
+      ],
+      "shaclShapes": {
+        "ogc.osc.prov-profiles.workflow-graph": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/shapes.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ],
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/vegetation-productivity/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/vegetation-productivity/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/vegetation-productivity/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/vegetation-productivity/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/vegetation-productivity/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-examples/52n-provenance/vegetation-productivity/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-examples/52n-provenance/vegetation-productivity/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-examples/52n-provenance/vegetation-productivity/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-examples/52n-provenance/vegetation-productivity/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-examples/52n-provenance/vegetation-productivity/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-examples.52n-provenance.vegetation-productivity"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.prov-profiles.hartis-provenance.cvi-workflow",
+      "name": "HARTIS CVI Workflow Provenance",
+      "abstract": "A provenance profile for the complete HARTIS Coastal Vulnerability Index workflow, from configuration and source data through coastline extraction, transect generation, indicator calculations and the final CVI result.",
+      "description": "This HARTIS D100 candidate profiles a complete workflow execution rather than a generic single processing step. It makes the workflow definition, planned processing activities, runtime activities, used entities and generated entities explicit so that the full CVI chain can be reviewed and reproduced.",
+      "status": "under-development",
+      "version": "0.1.0",
+      "dateTimeAddition": "2026-10-13T00:00:00Z",
+      "itemClass": "schema",
+      "isProfileOf": [
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "scope": "dev",
+      "sources": [
+        {
+          "title": "HARTIS CVI workflow repository",
+          "link": "https://github.com/hartis-org/cvi-workflow"
+        },
+        {
+          "title": "HARTIS OSPD-2026 D001 contribution",
+          "link": "https://github.com/hartis-org/cvi-workflow/blob/ospd2026-d100/ospd2026/report/d001-hartis-contribution.md"
+        }
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ],
+        "ogc.osc.prov-profiles.processing-step": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/processing-step/shapes.shacl"
+        ],
+        "ogc.osc.prov-profiles.workflow-graph": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/workflow-graph/shapes.shacl"
+        ]
+      },
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.iri-or-curie",
+        "bblocks://ogc.ogc-utils.prov-activity",
+        "bblocks://ogc.ogc-utils.prov-entity",
+        "bblocks://ogc.osc.prov-profiles.processing-step",
+        "bblocks://ogc.osc.prov-profiles.workflow-graph"
+      ],
+      "dateOfLastChange": "2026-11-24",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/hartis-provenance/cvi-workflow/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/hartis-provenance/cvi-workflow/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/hartis-provenance/cvi-workflow/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/hartis-provenance/cvi-workflow/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/hartis-provenance/cvi-workflow/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/prov-profiles/hartis-provenance/cvi-workflow/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/prov-profiles/hartis-provenance/cvi-workflow/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/prov-profiles/hartis-provenance/cvi-workflow/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/prov-profiles/hartis-provenance/cvi-workflow/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/prov-profiles/hartis-provenance/cvi-workflow/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.prov-profiles.hartis-provenance.cvi-workflow"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.rss-hydro.workflow.model-of-models",
+      "name": "Model of Models workflow",
+      "abstract": "Tested provenance example of a slice of the RSS-Hydro Model of Models flood workflow: per-watershed aggregation of a gridded source, hazard score accumulation with extra model inputs, and the final alert from the hazard scores of all sources. GFMS and GloFAS are example sources.",
+      "status": "under-development",
+      "dateTimeAddition": "2026-10-14T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.ogc-utils.prov",
+        "bblocks://ogc.osc.rss-hydro.ontology.activities",
+        "bblocks://ogc.osc.rss-hydro.processing-activity"
+      ],
+      "version": "0.1",
+      "scope": "dev",
+      "tags": [
+        "flood",
+        "hydrology",
+        "watershed"
+      ],
+      "shaclShapes": {
+        "ogc.osc.rss-hydro.workflow.model-of-models": [
+          "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/workflow/model-of-models/rules.shacl"
+        ],
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "dateOfLastChange": "2026-11-24",
+      "ldContext": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/workflow/model-of-models/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/workflow/model-of-models/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/workflow/model-of-models/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/workflow/model-of-models/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/workflow/model-of-models/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/rss-hydro/workflow/model-of-models/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/rss-hydro/workflow/model-of-models/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/rss-hydro/workflow/model-of-models/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/rss-hydro/workflow/model-of-models/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/rss-hydro/workflow/model-of-models/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.rss-hydro.workflow.model-of-models"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.ipt.execute",
+      "status": "under-development",
+      "dateTimeAddition": "2025-10-22T15:29:12.046535",
+      "register": "ogcapi-processes",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "tags": [
+        "ogcapi-processes",
+        "schema"
+      ],
+      "name": "Execute (request) schema for IPT",
+      "itemClass": "schema",
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://ogc.ogc-utils.iri-or-curie"
+      ],
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/execute/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/execute/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ipt/execute/schema.yaml",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/ipt/execute/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ipt/execute/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/ipt/execute/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/ipt/execute/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.ipt.execute"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.ipt.api",
+      "name": "IPT Profile of OGC API Processes",
+      "highlighted": true,
+      "group": "API Profiles",
+      "status": "under-development",
+      "dateTimeAddition": "2024-03-22T11:40:00+01:00",
+      "itemClass": "api",
+      "register": "ogcapi-features",
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "sources": [
+        {
+          "title": "OGC API Processes",
+          "link": "https://docs.ogc.org/is/18-062r2/18-062r2.html"
+        }
+      ],
+      "dependsOn": [
+        "bblocks://ogc.osc.api-profiles.processes.ipt.execute",
+        "bblocks://ogc.osc.api-profiles.processes.ipt.results"
+      ],
+      "tags": [
+        "ogcapi-processes",
+        "features"
+      ],
+      "abstract": "This is a Profile of the OGC API Processes model with specific requirements to standardise Integrity Provenance and Trust (IPT) aspects/",
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ipt/api/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/ipt/api/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/ipt/api/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.ipt.api"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.sample-implementation",
+      "name": "Custom OGC API processes instance",
+      "highlighted": true,
+      "group": "API Profile Example",
+      "abstract": "An example of an OGC API Processes implementation using the extension point mechanism for complex Building Blocks",
+      "status": "under-development",
+      "dateTimeAddition": "2025-12-17T00:00:00Z",
+      "itemClass": "api",
+      "register": "ogc-incubator",
+      "version": "1.0",
+      "dateOfLastChange": "2026-11-24",
+      "maturity": "development",
+      "tags": [
+        "examples",
+        "ogc api",
+        "ogc api processes"
+      ],
+      "isProfileOf": [
+        "bblocks://ogc.api.processes.v1.api"
+      ],
+      "extensionPoints": {
+        "baseBuildingBlock": "bblocks://ogc.api.processes.v1.api",
+        "extensions": {
+          "bblocks://ogc.api.processes.v1.schemas.inputDescription": "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.inputDescriptions",
+          "bblocks://ogc.api.processes.v1.schemas.outputDescription": "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.outputDescriptions",
+          "bblocks://ogc.api.processes.v1.schemas.results": "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputSchema"
+        }
+      },
+      "shaclShapes": {},
+      "dependsOn": [
+        "bblocks://ogc.api.processes.v1.api",
+        "bblocks://ogc.api.processes.v1.responses.ExecuteAsync",
+        "bblocks://ogc.api.processes.v1.responses.NotFound",
+        "bblocks://ogc.api.processes.v1.responses.ServerError",
+        "bblocks://ogc.api.processes.v1.schemas.execute",
+        "bblocks://ogc.api.processes.v1.schemas.inputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.outputDescription",
+        "bblocks://ogc.api.processes.v1.schemas.results",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.inputSchema",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.outputSchema",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.buffer-geometry.processDescription",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.inputDescriptions",
+        "bblocks://ogc.osc.api-profiles.processes.sample-implementation.schemas.outputDescriptions"
+      ],
+      "sourceOpenAPIDocument": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/openapi.yaml",
+      "openAPIDocument": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/api-profiles/processes/sample-implementation/openapi.yaml",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/sample-implementation/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/sample-implementation/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/sample-implementation/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.sample-implementation"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.application-package",
+      "name": "Application Package",
+      "highlighted": true,
+      "group": "Workflow Descriptions",
+      "abstract": "Earth Observation Application Package. ",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "schema",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.profiles.prov.cwl.provenance"
+      ],
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "link": "https://github.com/opengeospatial/geodcat-ogcapi-records",
+      "sources": [
+        {
+          "title": "Earth Observation Application Package",
+          "link": "https://github.com/eoap"
+        }
+      ],
+      "scope": "dev",
+      "tags": [],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "ldContext": "/github/workspace/_sources/application-package/context.jsonld",
+      "schema": {
+        "application/yaml": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/application-package/schema.yaml",
+        "application/json": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/application-package/schema.json"
+      },
+      "sourceSchema": "https://ogcincubator.github.io/bblocks-openscience/_sources/application-package/schema.yaml",
+      "sourceLdContext": "https://ogcincubator.github.io/bblocks-openscience/_sources/application-package/context.jsonld",
+      "resolvedSchemaProperties": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/osc/application-package/resolvedProperties.json",
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/application-package/",
+      "validationPassed": true,
+      "testOutputs": "https://github.com/ogcincubator/bblocks-openscience/blob/master/build/tests/osc/application-package/",
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/application-package/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/application-package/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.application-package"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.workflow",
+      "name": "Workflow profile of OGC API Processes",
+      "highlighted": true,
+      "group": "API Profiles",
+      "abstract": "Generalised profile of API Processes executing a workflow (using Application Package profile of CWL)",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "api",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.osc.api-profiles.processes.ipt.api",
+        "bblocks://ogc.osc.application-package"
+      ],
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "link": "https://github.com/opengeospatial/ogcapi-processes",
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "DCAT",
+        "profile",
+        "Records",
+        "STAC",
+        "PROV"
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/workflow/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/workflow/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/workflow/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.workflow"
+        }
+      }
+    },
+    {
+      "itemIdentifier": "ogc.osc.api-profiles.processes.ospd",
+      "name": "Open Science profile of OGC API Processes",
+      "highlighted": true,
+      "group": "API Profiles",
+      "abstract": "Support reproduceable science and interoperable workflows through profiling OGC API Processes to use a workflow model with transparent provenance and adherance to a common metadata profile for describing data inputs and outputs.",
+      "status": "under-development",
+      "dateTimeAddition": "2023-09-18T00:00:00Z",
+      "itemClass": "api",
+      "register": "ogc-incubator",
+      "dependsOn": [
+        "bblocks://ogc.osc.api-profiles.processes.workflow"
+      ],
+      "version": "0.1",
+      "dateOfLastChange": "2026-11-24",
+      "link": "https://github.com/opengeospatial/ogcapi-processes",
+      "sources": [],
+      "scope": "dev",
+      "tags": [
+        "DCAT",
+        "profile",
+        "Records",
+        "STAC",
+        "PROV"
+      ],
+      "shaclShapes": {
+        "ogc.model.cross-domain.prov": [
+          "https://ogcincubator.github.io/cross-domain-model/_sources/prov/shapes.shacl"
+        ]
+      },
+      "sourceFiles": "https://ogcincubator.github.io/bblocks-openscience/_sources/api-profiles/processes/ospd/",
+      "validationPassed": true,
+      "documentation": {
+        "markdown": {
+          "mediatype": "text/markdown",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/markdown/osc/api-profiles/processes/ospd/index.md"
+        },
+        "json-full": {
+          "mediatype": "application/json",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/build/generateddocs/json-full/osc/api-profiles/processes/ospd/index.json"
+        },
+        "bblocks-viewer": {
+          "mediatype": "text/html",
+          "url": "https://ogcincubator.github.io/bblocks-openscience/bblock/ogc.osc.api-profiles.processes.ospd"
+        }
+      }
+    }
+  ],
+  "remoteCacheDir": "https://ogcincubator.github.io/bblocks-openscience/build/annotated/_cache",
+  "links": [
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-openscience/build/register.json",
+      "type": "application/json",
+      "title": "This Building Blocks Register in JSON format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-openscience/build/bblocks.ttl",
+      "type": "text/turtle",
+      "title": "This Building Blocks Register in RDF Turtle format"
+    },
+    {
+      "rel": "self",
+      "href": "https://ogcincubator.github.io/bblocks-openscience/build/bblocks.jsonld",
+      "type": "application/ld+json",
+      "title": "This Building Blocks Register in JSON-LD format"
+    }
+  ]
+}
